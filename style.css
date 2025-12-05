@@ -29,9 +29,31 @@ a {
   outline: none;
 }
 
+/* select {  移除下拉式選單三角形
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
+/* 加入自己做的三角形 的方法
+  padding: 8px 30px 8px 10px;   右側留空給箭頭 
+  background: url('arrow-down.svg') no-repeat right center;  自訂箭頭 
+  background-size: 16px 16px;     調整大小 
+  border: 1px solid #ccc;
+  border-radius: 4px; */
+
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 input:focus {
   outline: none;
   box-shadow: none;
+}
+
+.disabled-word {
+  color: var(--light-gray);
 }
 
 .product-serve {
@@ -53,14 +75,29 @@ input:focus {
 
 .find-filter {
   margin-left: 15%;
-  margin-top: 16px;
 }
 
-.filter-word {
-  display: inline-block;
-  background-color: var(--green-gray);
-  /* font-size: 20px; */
+.roast {
   padding: 4px 8px;
+  display: flex;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.roast-word {
+  padding: 4px 8px;
+  background-color: var(--soft-brown);
+  /* margin-right: 8px; */
+}
+
+.roast-choose {
+  border: 4px solid var(--soft-brown);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.roast-bg {
+  background-color: var(--soft-brown);
 }
 
 .product-pic-area {

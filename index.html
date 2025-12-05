@@ -20,10 +20,20 @@
   <body>
     <div class="product-serve">
       <input class="find" type="text" placeholder="喝一杯靜謐的午後時光" />
-      <details class="find-filter">
-        <summary class="filter-word">篩選</summary>
-        <p>答案：這是 details / summary，可以用來做開合效果</p>
-      </details>
+      <div class="find-filter">
+        <div class="roast">
+          <p class="roast-word">焙度</p>
+          <select class="roast-choose">
+            <option disabled selected value="" class="disabled-word roast-bg">
+              請選擇
+            </option>
+            <option class="roast-bg" value="light-roast">淺焙</option>
+            <option class="roast-bg" value="medium-roast">中焙</option>
+            <option class="roast-bg" value="medium-dark-roast">中深焙</option>
+            <option class="roast-bg" value="dark-roast">深焙</option>
+          </select>
+        </div>
+      </div>
 
       <!-- 篩選列：烘焙度、產地、處理法、價格區間 -->
       <!-- 排序選單：熱門、價格由高到低、由低到高 -->
