@@ -15,10 +15,52 @@
   /* 淡灰 */
 }
 
+* {
+  font-family: "LXGW WenKai TC";
+}
+
+body {
+  background-color: var(--main-color);
+}
+
 a {
   color: inherit;
   text-decoration: none;
   outline: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.product-serve {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.find {
+  display: block;
+  border: 2px solid var(--green-gray);
+  margin: 0 auto;
+  width: 70%;
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 12px;
+}
+
+.find-filter {
+  margin-left: 15%;
+  margin-top: 16px;
+}
+
+.filter-word {
+  display: inline-block;
+  background-color: var(--green-gray);
+  /* font-size: 20px; */
+  padding: 4px 8px;
 }
 
 .product-pic-area {
@@ -27,7 +69,7 @@ a {
   width: 94%;
   gap: 80px;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #aaaaaa;
+  /* background-color: #aaaaaa; */
 }
 
 .product-card {
@@ -50,4 +92,5 @@ a {
 
 .product-name {
   font-size: 20px;
+  font-weight: 700;
 }
