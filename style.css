@@ -17,6 +17,7 @@
 
 * {
   font-family: "LXGW WenKai TC";
+  color: #222222;
 }
 
 body {
@@ -75,29 +76,114 @@ input:focus {
 
 .find-filter {
   margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  margin-top: 12px;
 }
 
 .roast {
-  padding: 4px 8px;
+  padding: 4px 12px;
   display: flex;
   font-size: 20px;
-  margin-top: 8px;
 }
 
 .roast-word {
-  padding: 4px 8px;
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 10px;
   background-color: var(--soft-brown);
-  /* margin-right: 8px; */
+}
+
+.IC-filter-list {
+  line-height: 30px;
+  padding-right: 8px;
 }
 
 .roast-choose {
   border: 4px solid var(--soft-brown);
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 0 4px;
 }
 
 .roast-bg {
   background-color: var(--soft-brown);
+}
+
+.source {
+  padding: 4px 12px;
+  display: flex;
+  font-size: 20px;
+}
+
+.source-word {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 10px;
+  background-color: var(--green-gray);
+  color: #000000;
+}
+
+.source-choose {
+  border: 4px solid var(--green-gray);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.source-bg {
+  background-color: var(--green-gray);
+}
+
+.processing {
+  padding: 4px 12px;
+  display: flex;
+  font-size: 20px;
+}
+
+.processing-word {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 10px;
+  background-color: #d8c2c3;
+}
+
+.processing-choose {
+  border: 4px solid #d8c2c3;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.processing-bg {
+  background-color: #d8c2c3;
+}
+
+.money-area {
+  padding: 4px 12px;
+  display: flex;
+  font-size: 20px;
+}
+
+.money-area-word {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 10px;
+  background-color: #c4ced6;
+}
+
+.money-area-choose {
+  border: 4px solid #c4ced6;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.money-area-bg {
+  background-color: #c4ced6;
 }
 
 .product-pic-area {
