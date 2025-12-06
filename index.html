@@ -21,6 +21,28 @@
     <div class="product-serve">
       <input class="find" type="text" placeholder="喝一杯靜謐的午後時光" />
       <div class="find-filter">
+        <!-- category start -->
+        <div class="category">
+          <div class="category-word">
+            <i class="fa-solid fa-store IC-filter-list"></i>
+            <p>類別</p>
+          </div>
+          <select class="category-choose">
+            <option
+              disabled
+              selected
+              value=""
+              class="disabled-word category-bg"
+            >
+              請選擇
+            </option>
+            <option class="category-bg" value="">精選咖啡豆</option>
+            <option class="category-bg" value="">輕巧濾掛包</option>
+            <option class="category-bg" value="">精良器具</option>
+          </select>
+        </div>
+        <!-- roast end -->
+
         <!-- roast start -->
         <div class="roast">
           <div class="roast-word">
@@ -47,7 +69,7 @@
           </div>
 
           <select class="source-choose">
-            <option disabled selected value="" class="disabled-word roast-bg">
+            <option disabled selected value="" class="disabled-word source-bg">
               請選擇
             </option>
             <option class="source-bg" value="Ethiopia">衣索比亞</option>
@@ -63,27 +85,21 @@
         <!-- source end -->
 
         <!-- processing start -->
-        <div class="processing">
-          <div class="processing-word">
-            <i class="fa-solid fa-screwdriver IC-filter-list"></i>
-            <p>採後處理</p>
+        <div class="flavor">
+          <div class="flavor-word">
+            <i class="fa-solid fa-mug-hot IC-filter-list"></i>
+            <p>風味</p>
           </div>
-          <select class="processing-choose">
-            <option disabled selected value="" class="disabled-word roast-bg">
+          <select class="flavor-choose">
+            <option disabled selected value="" class="disabled-word flavor-bg">
               請選擇
             </option>
-            <option class="processing-bg" value="Washed">水洗法</option>
-            <option class="processing-bg" value="Natural ">日曬法</option>
-            <option class="processing-bg" value="Honey">密處理法</option>
-            <option class="processing-bg" value="Anaerobic-Fermentation">
-              厭氧處理
-            </option>
-            <option class="processing-bg" value="Double-Fermentation">
-              雙重發酵
-            </option>
-            <option class="processing-bg" value="Cold-Fermentation">
-              冷發酵
-            </option>
+            <option class="flavor-bg" value="">柑橘</option>
+            <option class="flavor-bg" value="">花香</option>
+            <option class="flavor-bg" value="">果香</option>
+            <option class="flavor-bg" value="">巧克力</option>
+            <option class="flavor-bg" value="">堅果</option>
+            <option class="flavor-bg" value="">酒香</option>
           </select>
         </div>
         <!-- processing end -->
@@ -95,13 +111,18 @@
             <p>價錢區間</p>
           </div>
           <select class="money-area-choose">
-            <option disabled selected value="" class="disabled-word roast-bg">
+            <option
+              disabled
+              selected
+              value=""
+              class="disabled-word money-area-bg"
+            >
               請選擇
             </option>
-            <option class="money-areat-bg" value="">~1000</option>
-            <option class="money-areat-bg" value="">1000~3000</option>
-            <option class="money-areat-bg" value="">3000~7000</option>
-            <option class="money-areat-bg" value="">7000~</option>
+            <option class="money-area-bg" value="">~1000</option>
+            <option class="money-area-bg" value="">1000~3000</option>
+            <option class="money-area-bg" value="">3000~7000</option>
+            <option class="money-area-bg" value="">7000~</option>
           </select>
         </div>
         <!-- money-area end -->
