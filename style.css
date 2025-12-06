@@ -62,12 +62,14 @@ input:focus {
   margin-bottom: 80px;
   margin-left: 3%;
   margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .find {
   display: block;
   border: 2px solid var(--green-gray);
-  margin: 0 auto;
   width: 70%;
   font-size: 24px;
   padding: 12px 24px;
@@ -75,10 +77,8 @@ input:focus {
 }
 
 .find-filter {
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex;
   margin-top: 12px;
+  display: flex;
 }
 
 .IC-filter-list {
@@ -87,9 +87,10 @@ input:focus {
 }
 
 .category {
-  padding: 4px 12px;
+  padding: 4px 24px;
   display: flex;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .category-word {
@@ -111,9 +112,10 @@ input:focus {
 }
 
 .roast {
-  padding: 4px 12px;
+  padding: 4px 24px;
   display: flex;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .roast-word {
@@ -135,9 +137,10 @@ input:focus {
 }
 
 .source {
-  padding: 4px 12px;
+  padding: 4px 24px;
   display: flex;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .source-word {
@@ -161,9 +164,10 @@ input:focus {
 }
 
 .flavor {
-  padding: 4px 12px;
+  padding: 4px 24px;
   display: flex;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .flavor-word {
@@ -186,9 +190,10 @@ input:focus {
 }
 
 .money-area {
-  padding: 4px 12px;
+  padding: 4px 24px;
   display: flex;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .money-area-word {
@@ -211,9 +216,6 @@ input:focus {
 }
 
 .sort {
-  /* margin: 0 3%;
-  margin-top: ;
-  margin-bottom: ; */
   display: flex;
   margin-left: 3%;
   margin-right: 3%;
@@ -265,6 +267,7 @@ input:focus {
   flex-direction: column;
   align-items: center;
   position: absolute;
+  width: 100%;
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
@@ -273,4 +276,45 @@ input:focus {
 .product-name {
   font-size: 20px;
   font-weight: 700;
+}
+
+@media (768px <= width < 1024px) {
+  .find {
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 8px;
+  }
+
+  .category {
+    padding: 4px 12px;
+  }
+
+  .roast {
+    padding: 4px 12px;
+  }
+
+  .source {
+    padding: 4px 12px;
+  }
+
+  .flavor {
+    padding: 4px 12px;
+  }
+
+  .money-area {
+    padding: 4px 12px;
+  }
+
+  .sort {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .product-pic-area {
+    margin: 0 6%;
+    width: 88%;
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #aaaaaa; */
+  }
 }
